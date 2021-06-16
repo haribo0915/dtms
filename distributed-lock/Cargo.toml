@@ -1,0 +1,21 @@
+[package]
+name = "distributed-lock"
+version = "0.1.0"
+authors = ["Chi-Chen Chang <ccchang915@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+zenoh = "0.5.0-beta.8"
+anyhow = "1.0.38"
+async-trait = "0.1.36"
+futures = "0.3"
+thiserror = "1.0.20"
+tokio = { version="1.0", default-features=false, features=["fs", "io-util", "macros", "rt", "rt-multi-thread", "sync", "time"] }
+tracing = "0.1"
+tracing-futures = "0.2.4"
+tracing-subscriber = "0.2.10"
+
+[dev-dependencies]
+tracing-subscriber = "0.2.10"
