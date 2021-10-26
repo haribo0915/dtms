@@ -4,7 +4,8 @@ members = [
     "distributed-lock",
     "eventual-queue",
     "reliable-broadcast",
-    "roadsite-unit"
+    "roadsite-unit",
+    "r-tree"
 ]
 
 [profile.dev.package."*"]
